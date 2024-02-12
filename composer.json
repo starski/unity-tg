@@ -1,0 +1,17 @@
+{
+    "name": "szymones/zoo",
+    "autoload": {
+        "psr-4": {
+            "AppZoo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "starski",
+            "email": "s.starkowski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "8.*"
+    }
+}
