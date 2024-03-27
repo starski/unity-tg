@@ -29,7 +29,7 @@ książek, książki i recenzje, spełniający następujące wymagania:
 * Tabela autorów powinna zawierać pola imię i nazwisko,
 * Tabela książek powinna zawierać tytuł, rok publikacji oraz numer ISBN,
 * Tabela recenzji powinna zawierać ocenę w skali 1-10 oraz treść.
-* 
+
 1. Zapisz zapytanie SQL tworzące schemat.
 2. Zapisz zapytanie zwracające imiona i nazwiska autorów, wraz z liczbą napisanych przez
 nich książek.
