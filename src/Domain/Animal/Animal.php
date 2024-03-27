@@ -17,7 +17,7 @@ abstract class Animal
 
     public function __toString(): string
     {
-        return sprintf("%s imieniem %s" . PHP_EOL,
+        return sprintf("%s o imieniu %s" . PHP_EOL,
             $this->translatedSpeciesName ?? $this::class,
             $this->name->getValue()
         );

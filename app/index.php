@@ -14,10 +14,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 
 $zoo = new Zoo();
-
-// Tworzymy serwis dla naszego zoo
 $zooService = new ZooService($zoo);
 
+// potencjalne zwierzęta czekające na dodanie do naszego Zoo.
 $someAnimals = [
     new Tiger( new AnimalName('Felix')),
     new Elephant( new AnimalName('Benjamin')),
@@ -36,6 +35,7 @@ foreach ($someAnimals as $animal) {
     } catch (Exception $exception) {
         echo $exception->getMessage();
     }
+    echo  '---------------------------------------------------------------', PHP_EOL;
 }
 
 $zooService->feedAllAnimals();

@@ -44,6 +44,7 @@ class Zoo
             if ($animal instanceof FurryInterface) {
                 self::displayInfo('Teraz czeszę: ' . $animal);
                 $animal->brush();
+                self::displayInfo(PHP_EOL);
             }
         }
     }
@@ -51,11 +52,13 @@ class Zoo
     public function feedCarnivoreAnimal(Animal $animal): void
     {
         $animal->eat(new Meat());
+        self::displayInfo(PHP_EOL);
     }
 
     public function feedHerbivoreAnimal(Animal $animal): void
     {
         $animal->eat(new Plant());
+        self::displayInfo(PHP_EOL);
     }
 
     static function displayInfo($info): void

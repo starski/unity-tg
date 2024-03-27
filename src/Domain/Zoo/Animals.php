@@ -11,13 +11,17 @@ class Animals
 
     public function add(Animal $animal): void
     {
+        $this->checkIfExists($animal);
+        $this->animals[] = $animal;
+    }
+
+    public function checkIfExists(Animal $animal): void
+    {
         foreach ($this->animals as $existingAnimal) {
             if ($existingAnimal == $animal) {
-                throw new InvalidArgumentException($animal . " - this animal is already in the Zoo!" . PHP_EOL);
+                throw new InvalidArgumentException($animal . " - to zwierzę jest już w naszym Zoo!" . PHP_EOL);
             }
         }
-
-        $this->animals[] = $animal;
     }
 
     public function getAll(): array
